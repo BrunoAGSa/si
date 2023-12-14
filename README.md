@@ -1,5 +1,13 @@
 # Sistemas Inteligentes para a Bioinformática
 
+## Guide 
+
+Main Evaluation Notebooks 
+
+/si/exercices_evaluation
+
+
+
 ## Curricular Unit
 Mestrado em Bioinformática, Universidade do Minho, 2023-2024.
 
@@ -33,12 +41,12 @@ Note: You can also create a similar Python package and push it to your GitHub.
 
 Make a change to the repository: Add your co-authorship to the _\_\_init\_\_.py_ file (within the si folder):
 ```python
-__author__ = "YOUR_NAME" 
-__credits__ = ["YOUR_NAME"]
+__author__ = "Bruno Sá"
+__credits__ = ["Bruno Sá"]
 __license__ = "Apache License 2.0"
 __version__ = "0.0.1"
-__maintainer__ = "YOUR_NAME"
-__email__ = "YOUR_EMAIL"
+__maintainer__ = "Bruno Sá"
+__email__ = "sa.bruno.2001@gmail.com"
 ```
 
 Then, commit it to your local repository and publish it to your GitHub:

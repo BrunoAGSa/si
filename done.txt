@@ -1,0 +1,78 @@
+TO do 
+
+        Class 1
+            Exercise 1: NumPy array Indexing/Slicing
+
+            Exercise 2: NumPy array Indexing/Slicing
+
+            Optional: You can add examples of how to use these methods
+to the script/notebook of Exercise 1.
+
+        Class 2
+
+            Exercise 3: Implementing SelectPercentile
+
+
+        Class 3
+
+            Exercise 4: Implement the Manhattan distance in
+a module called "manhattan_distance.py" in the sub-
+package "statistics".
+
+            Exercise 5: Implement the PCA Class
+
+
+        Class 4
+
+            Exercise 6: Implementing stratified splitting
+
+            Exercise 7: Implementing the KNNRegressor withRMSE
+
+            Optional – Categorical Naïve-Bayes
+
+        Class 5
+             
+            Exercise 8: Implementing RidgeRegression with Least Squares  
+
+        Class 7
+
+            Exercise 9: Implementing the RandomForestClassifier class
+
+            Exercise 10: Implementing the StackingClassifier ensemble
+
+        Class 8
+
+            Exercise 11: Implementing the randomized_search_cv function.
+
+        Class 9 
+
+            Exercise 12: Dropout layer
+
+            Exercise 13: TanhActivation and SoftmaxActivation classes
+
+            Exercise 14: CategoricalCrossEntropy Class
+
+            Exercise 15: Adam class
+
+            Exercise 16: Build, train and evaluate a neural network
+
+
+        Class 11
+
+            Exercise 17: Implementing One-Hot-Encoding
+
+
+
+
+
+
+
+        
+
+
+---------------
+
+
+
+
+
