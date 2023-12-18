@@ -6,14 +6,46 @@ class PCA:
     Principal Component Analysis (PCA) is a linear dimensionality reduction technique that can be utilized for extracting information from a high-dimensional space by projecting it into a lower-dimensional sub-space. It tries to preserve the essential parts that have more variation of the data and remove the non-essential parts with fewer variation.
     """
     def __init__(self, n_components: int = 2):
+
+        """ 
+        PCA implementation using Singular Value Decomposition (SVD) to infer the principal components of a dataset.
+
+        Parameters
+        ----------
+        n_components : int, optional
+            Number of components to keep. If not specified, all components are kept.
+
+        Attributes
+        ----------
+        n_components : int
+            Number of components to keep.
+
+        mean : np.ndarray
+            Mean of the dataset.
+
+        components : np.ndarray
+            Principal components of the dataset.
+
+        explained_variance : np.ndarray
+            Variance explained by each of the selected components.
         
+        """
+
         self.n_components = n_components
         self.mean = None
         self.components = None
         self.explained_variance = None
 
     def fit(self, X: np.ndarray) -> None:
-        
+
+        """ Fits PCA by inferring the principal components of a dataset.
+
+        Parameters
+        ----------
+        X : np.ndarray
+            Dataset to be fitted.
+        """
+
         # centering the data
         self.mean = np.mean(X, axis=0)
         X = X - self.mean
@@ -30,7 +62,21 @@ class PCA:
 
 
     def transform(self, X: np.ndarray) -> np.ndarray:
-        
+
+        """ Transforms the dataset by projecting it into a lower-dimensional sub-space.
+
+        Parameters
+        ----------
+        X : np.ndarray
+            Dataset to be transformed.
+
+            
+        Returns
+        -------
+        X_reduced : np.ndarray
+            Reduced dataset.
+        """ 
+
         # centering the data
         X = X - self.mean
 
@@ -38,6 +84,21 @@ class PCA:
         return np.dot(X, self.components.T)
     
     def fit_transform(self, X: np.ndarray) -> np.ndarray:
+
+        """ Fits PCA by inferring the principal components of a dataset and transforms it by projecting it into a lower-dimensional sub-space.
+
+        Parameters
+        ----------
+        X : np.ndarray
+            Dataset to be fitted and transformed.
+
+
+        Returns
+        -------
+        X_reduced : np.ndarray
+            Reduced dataset.
+        """
+
         self.fit(X)
         return self.transform(X)
     
